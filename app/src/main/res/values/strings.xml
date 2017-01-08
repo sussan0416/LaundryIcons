@@ -5,4 +5,34 @@
     <string name="category_drying">乾燥のしかた</string>
     <string name="category_iron">アイロンのしかた</string>
     <string name="category_cleaning">クリーニングの種類</string>
+    <string name="washing_title">家庭洗濯（洗濯機洗い）ができる\n記号の中の数字は洗濯液の上限温度を表す</string>
+    <string name="washing_description">「-」は「線なし」より弱く、\n「=」はさらに弱い洗い方を表す</string>
+    <string name="washing_title_hand">洗濯液の温度は40度を限度とした手洗いができる</string>
+    <string name="washing_title_disable">家庭での洗濯はできない</string>
+    <string name="bleaching_title">塩素系および酸素系漂白剤が使える</string>
+    <string name="bleaching_title_oxygen">酸素系漂白剤のみが使える</string>
+    <string name="bleaching_description_oxygen">塩素系漂白剤は使用禁止</string>
+    <string name="bleaching_title_disable">漂白剤は使えない</string>
+    <string name="drying_title_line">つり干し</string>
+    <string name="drying_description_line">「||」は、脱水せず（絞らず）濡れた状態で干すことを表す</string>
+    <string name="drying_title_line_shade">日陰のつり干し</string>
+    <string name="drying_description_line_shade">「||」は、脱水せず（絞らず）濡れた状態で干すことを表す</string>
+    <string name="drying_title_flat">平干し</string>
+    <string name="drying_description_flat">「=」は、脱水せず（絞らず）濡れた状態で干すことを表す</string>
+    <string name="drying_title_flat_shade">日陰の平干し</string>
+    <string name="drying_description_flat_shade">「=」は、脱水せず（絞らず）濡れた状態で干すことを表す</string>
+    <string name="drying_title_tumbler">家庭でタンブル乾燥ができる\n点の数は乾燥の温度を表す</string>
+    <string name="drying_description_tumbler">「••」は、ヒーターを「強」等に設定（排気温度は最高80度）\n「•」は、ヒーターを「弱・低温」等に設定（排気温度は最高60度）</string>
+    <string name="drying_title_disable">タンブル乾燥禁止</string>
+    <string name="iron_title">アイロンをかけることができる\n点の数はアイロンの底面温度の上限を表す</string>
+    <string name="iron_description">「•••」は200度（高温）まで\n「••」は150度（中温）まで\n「•」は110度（低温）まで</string>
+    <string name="iron_title_disable">アイロンがけはできない</string>
+    <string name="cleaning_title_tetra">ドライクリーニングができる</string>
+    <string name="cleaning_description_tetra">テトラクロロエチレン（パークロロエチレン）および石油系溶剤が使用できる</string>
+    <string name="cleaning_title_fuel">ドライクリーニングができる</string>
+    <string name="cleaning_description_fuel">石油系溶剤(蒸留温度 150 ~210°C、引火点 38~70°C)が使用できる</string>
+    <string name="cleaning_title_disable">ドライクリーニングはできない</string>
+    <string name="cleaning_title_wet">ウェットクリーニングができる</string>
+    <string name="cleaning_description_wet">「-」は「線なし」より弱く、\n「=」はさらに弱い洗い方を表す</string>
+    <string name="cleaning_title_wet_disable">ウェットクリーニングはできない</string>
 </resources>
