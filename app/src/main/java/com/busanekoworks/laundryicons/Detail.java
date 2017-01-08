@@ -46,6 +46,16 @@ public enum Detail {
         mItems = items;
     }
 
+    public static ArrayList<Item> getItemsForCategory(int categoryNumber) {
+        for (Category category : Category.values()) {
+            if (category.ordinal() == categoryNumber) {
+                return getItemsForCategory(category);
+            }
+        }
+
+        throw new IllegalArgumentException();
+    }
+
     public static ArrayList<Item> getItemsForCategory(Category category) {
         for (Detail detail : values()) {
             if (detail.mCategory == category) {

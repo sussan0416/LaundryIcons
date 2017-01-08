@@ -13,4 +13,16 @@ public class Item {
         mImageRes = imageRes;
         mDetailRes = detailRes;
     }
+
+    public int getTitleRes() {
+        return mTitleRes;
+    }
+
+    public int getImageRes() {
+        return mImageRes;
+    }
+
+    public int getDetailRes() {
+        return mDetailRes;
+    }
 }
