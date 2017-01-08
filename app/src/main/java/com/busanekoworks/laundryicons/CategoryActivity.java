@@ -21,23 +21,30 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-        Intent intent = null;
+        Intent intent = new Intent(this, DetailActivity.class);
+        Category.Type type = null;
 
         switch (v.getId()) {
             case R.id.card_washing:
+                type = Category.Type.WASHING;
                 break;
             case R.id.card_bleaching:
+                type = Category.Type.BLEACHING;
                 break;
             case R.id.card_drying:
+                type = Category.Type.DRYING;
                 break;
             case R.id.card_iron:
+                type = Category.Type.IRON;
                 break;
             case R.id.card_cleaning:
+                type = Category.Type.CLEANING;
                 break;
             default:
                 break;
         }
-        
+
+        intent.putExtra(IntentKey.CATEGORY, type);
         startActivity(intent);
     }
 }
