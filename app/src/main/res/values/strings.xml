@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LaundryIcons</string>
+    <string name="category_washing">洗濯のしかた</string>
+    <string name="category_bleaching">漂白のしかた</string>
+    <string name="category_drying">乾燥のしかた</string>
+    <string name="category_iron">アイロンのしかた</string>
+    <string name="category_cleaning">クリーニングの種類</string>
 </resources>

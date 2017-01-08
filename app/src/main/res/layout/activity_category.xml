@@ -2,6 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_category"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,10 +10,166 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:clipToPadding="false"
     tools:context="com.busanekoworks.laundryicons.CategoryActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_washing"
+        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:contentPadding="@dimen/card_view_content_padding"
+        card_view:cardElevation="@dimen/cardview_default_elevation"
+        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/image_view_category_icon"
+                android:layout_height="@dimen/image_view_category_icon"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_washing"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_washing"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_bleaching"
+        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card_washing"
+        android:layout_marginBottom="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:contentPadding="@dimen/card_view_content_padding"
+        card_view:cardElevation="@dimen/cardview_default_elevation"
+        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/image_view_category_icon"
+                android:layout_height="@dimen/image_view_category_icon"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_bleaching"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_bleaching"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_drying"
+        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card_bleaching"
+        android:layout_marginBottom="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:contentPadding="@dimen/card_view_content_padding"
+        card_view:cardElevation="@dimen/cardview_default_elevation"
+        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/image_view_category_icon"
+                android:layout_height="@dimen/image_view_category_icon"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_drying"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_drying"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_iron"
+        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card_drying"
+        android:layout_marginBottom="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:contentPadding="@dimen/card_view_content_padding"
+        card_view:cardElevation="@dimen/cardview_default_elevation"
+        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/image_view_category_icon"
+                android:layout_height="@dimen/image_view_category_icon"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_iron"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_iron"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_cleaning"
+        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card_iron"
+        android:layout_marginBottom="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:contentPadding="@dimen/card_view_content_padding"
+        card_view:cardElevation="@dimen/cardview_default_elevation"
+        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/image_view_category_icon"
+                android:layout_height="@dimen/image_view_category_icon"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_cleaning"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_cleaning"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 </RelativeLayout>
