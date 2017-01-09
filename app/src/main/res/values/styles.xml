@@ -8,4 +8,28 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="WashingTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorWashing</item>
+        <item name="colorPrimaryDark">@color/colorWashingDark</item>
+    </style>
+
+    <style name="BleachingTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBleaching</item>
+        <item name="colorPrimaryDark">@color/colorBleachingDark</item>
+    </style>
+
+    <style name="DryingTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorDrying</item>
+        <item name="colorPrimaryDark">@color/colorDryingDark</item>
+    </style>
+
+    <style name="IronTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorIron</item>
+        <item name="colorPrimaryDark">@color/colorIronDark</item>
+    </style>
+
+    <style name="CleaningTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorCleaning</item>
+        <item name="colorPrimaryDark">@color/colorCleaningDark</item>
+    </style>
 </resources>
