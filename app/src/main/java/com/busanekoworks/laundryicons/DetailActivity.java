@@ -9,7 +9,6 @@ import android.widget.ListView;
 
 import com.busanekoworks.laundryicons.databinding.ActivityDetailBinding;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class DetailActivity extends AppCompatActivity {
@@ -17,14 +16,15 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        int category = getIntent().getIntExtra(IntentKey.CATEGORY, 0);
-        setTheme(Detail.getThemeResIdForCategory(category));
+        int categoryId = getIntent().getIntExtra(IntentKey.CATEGORY, 0);
+        Detail detail = Detail.getDetailForCategory(categoryId);
 
+        setTheme(detail.getStyleResId());
+        setTitle(detail.getTitleResId());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        ArrayList<Item> items = Detail.getItemsForCategory(category);
         ActivityDetailBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_detail);
-        binding.setItems(items);
+        binding.setItems(detail.getItems());
     }
 
     @BindingAdapter("app:items")

@@ -13,14 +13,16 @@ public enum Detail {
                     new Item(R.string.washing_title_hand, R.drawable.wash_hand, 0),
                     new Item(R.string.washing_title_disable, R.drawable.wash_disable, 0)
             )),
-            R.style.WashingTheme),
+            R.style.WashingTheme,
+            R.string.category_washing),
     BLEACHING(Category.BLEACHING,
             new ArrayList<>(Arrays.asList(
                     new Item(R.string.bleaching_title, R.drawable.bleach, 0),
                     new Item(R.string.bleaching_title_oxygen, R.drawable.bleach_oxygen, R.string.bleaching_description_oxygen),
                     new Item(R.string.bleaching_title_disable, R.drawable.bleach_disable, 0)
             )),
-            R.style.BleachingTheme),
+            R.style.BleachingTheme,
+            R.string.category_bleaching),
     DRYING(Category.DRYING,
             new ArrayList<>(Arrays.asList(
                     new Item(R.string.drying_title_line, R.drawable.dry_line, R.string.drying_description_line),
@@ -30,13 +32,15 @@ public enum Detail {
                     new Item(R.string.drying_title_tumbler, R.drawable.dry_tumbler, R.string.drying_description_tumbler),
                     new Item(R.string.drying_title_tumbler_disable, R.drawable.dry_tumbler_disable, 0)
             )),
-            R.style.DryingTheme),
+            R.style.DryingTheme,
+            R.string.category_drying),
     IRON(Category.IRON,
             new ArrayList<>(Arrays.asList(
                     new Item(R.string.iron_title, R.drawable.ironing, R.string.iron_description),
                     new Item(R.string.iron_title_disable, R.drawable.iron_disable, 0)
             )),
-            R.style.IronTheme),
+            R.style.IronTheme,
+            R.string.category_iron),
     CLEANING(Category.CLEANING,
             new ArrayList<>(Arrays.asList(
                     new Item(R.string.cleaning_title_tetra, R.drawable.clean_tetra, R.string.cleaning_description_tetra),
@@ -45,18 +49,19 @@ public enum Detail {
                     new Item(R.string.cleaning_title_wet, R.drawable.clean_wet, R.string.cleaning_description_wet),
                     new Item(R.string.cleaning_title_wet_disable, R.drawable.clean_wat_disable, 0)
             )),
-            R.style.CleaningTheme);
+            R.style.CleaningTheme,
+            R.string.category_cleaning);
 
     private final Category mCategory;
-
     private final ArrayList<Item> mItems;
-
     private final int mStyleResId;
+    private final int mTitleResId;
 
-    Detail(Category category, ArrayList<Item> items, int styleResId) {
+    Detail(Category category, ArrayList<Item> items, int styleResId, int titleResId) {
         mCategory = category;
         mItems = items;
         mStyleResId = styleResId;
+        mTitleResId = titleResId;
     }
 
     public static int getThemeResIdForCategory(int categoryNumber) {
@@ -79,6 +84,16 @@ public enum Detail {
         throw new IllegalArgumentException();
     }
 
+    public static Detail getDetailForCategory(int categoryNumber) {
+        for (Category category : Category.values()) {
+            if (category.ordinal() == categoryNumber) {
+                return getDetailForCategory(category);
+            }
+        }
+
+        throw new IllegalArgumentException();
+    }
+
     public static Detail getDetailForCategory(Category category) {
         for (Detail detail : values()) {
             if (detail.mCategory == category) {
@@ -95,5 +110,9 @@ public enum Detail {
 
     public int getStyleResId() {
         return mStyleResId;
+    }
+
+    public int getTitleResId() {
+        return mTitleResId;
     }
 }
