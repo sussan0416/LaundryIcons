@@ -4,5 +4,6 @@
     <dimen name="activity_vertical_margin">8dp</dimen>
     <dimen name="card_view_content_padding">8dp</dimen>
     <dimen name="image_view_category_icon">40dp</dimen>
-    <dimen name="image_end_margin">12dp</dimen>
+    <dimen name="image_start_margin">16dp</dimen>
+    <dimen name="image_end_margin">24dp</dimen>
 </resources>

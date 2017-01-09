@@ -22,6 +22,8 @@
                 android:id="@+id/image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/image_start_margin"
+                android:layout_marginStart="@dimen/image_start_margin"
                 android:layout_marginRight="@dimen/image_end_margin"
                 android:layout_marginEnd="@dimen/image_end_margin"
                 app:image="@{item.imageRes}"
