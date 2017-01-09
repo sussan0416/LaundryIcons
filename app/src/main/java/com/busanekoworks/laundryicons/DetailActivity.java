@@ -9,6 +9,7 @@ import android.widget.ListView;
 import com.busanekoworks.laundryicons.databinding.ActivityDetailBinding;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -23,7 +24,8 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     @BindingAdapter("app:items")
-    public static void setItems(ListView view, ArrayList<Item> items){
-        // TODO: DetailAdapterをListViewにSetする
+    public static void setItems(ListView listView, List<Item> items){
+        DetailListAdapter adapter = new DetailListAdapter(listView.getContext(), items);
+        listView.setAdapter(adapter);
     }
 }

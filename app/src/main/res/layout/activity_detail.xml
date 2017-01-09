@@ -6,13 +6,20 @@
         <import type="com.busanekoworks.laundryicons.Item"/>
         <variable name="items" type="List&lt;Item>"/>
     </data>
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <ListView
             android:id="@+id/list_view"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="8dp"
             app:items="@{items}"/>
     </FrameLayout>
 </layout>
