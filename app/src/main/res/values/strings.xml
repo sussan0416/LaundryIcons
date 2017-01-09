@@ -22,7 +22,7 @@
     <string name="drying_description_flat">「=」は、脱水せず（絞らず）濡れた状態で干すことを表す</string>
     <string name="drying_title_flat_shade">日陰の平干し</string>
     <string name="drying_description_flat_shade">「=」は、脱水せず（絞らず）濡れた状態で干すことを表す</string>
-    <string name="drying_title_tumbler">家庭でタンブル乾燥ができる\n点の数は乾燥の温度を表す</string>
+    <string name="drying_title_tumbler">家庭でタンブル乾燥（乾燥機を使用した乾燥）ができる\n点の数は乾燥の温度を表す</string>
     <string name="drying_description_tumbler">「••」は、ヒーターを「強」等に設定（排気温度は最高80度）\n「•」は、ヒーターを「弱・低温」等に設定（排気温度は最高60度）</string>
     <string name="drying_title_tumbler_disable">タンブル乾燥禁止</string>
     <string name="iron_title">アイロンをかけることができる\n点の数はアイロンの底面温度の上限を表す</string>
