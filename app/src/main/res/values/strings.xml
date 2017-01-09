@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">LaundryIcons</string>
+    <string name="app_name">洗濯マーク</string>
+    <string name="app_name_display">新 洗濯マーク</string>
     <string name="category_washing">洗濯のしかた</string>
     <string name="category_bleaching">漂白のしかた</string>
     <string name="category_drying">乾燥のしかた</string>
