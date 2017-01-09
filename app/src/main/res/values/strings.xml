@@ -36,4 +36,5 @@
     <string name="cleaning_title_wet">ウェットクリーニングができる</string>
     <string name="cleaning_description_wet">「-」は「線なし」より弱く、\n「=」はさらに弱い洗い方を表す</string>
     <string name="cleaning_title_wet_disable">ウェットクリーニングはできない</string>
+    <string name="copyright">Version 1.0.0\n© Busaneko Works 2017</string>
 </resources>
